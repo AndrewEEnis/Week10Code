@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drummers</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <img
+      src="https://i.redd.it/1m1dtflo6rb11.png"
+      class="img-fluid max-width: 100% height: auto rounded;"
+      alt="Drums"
+    />
+
+    <h1 class="text-center mt-3 mb-3">Drummers</h1>
+
+    <div class="container mb-5 fs-5">
+      <p>
+        This website serves as a resource for tracking Drummers, old and new,
+        and the brands of drum equipment they perform with.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="first-name">Drummer First Name</label>
+            <input type="text" class="form-control" id="first-name" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="last-name">Drummer Last Name</label>
+            <input type="text" class="form-control" id="last-name" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="drummer-group">Performing Group</label>
+            <input type="text" class="form-control" id="drummer-group" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="drum-brand">Drummer Drum Brand</label>
+            <input type="text" class="form-control" id="drum-brand" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="cymbal-brand">Drummer Cymbal Brand</label>
+            <input type="text" class="form-control" id="cymbal-brand" />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="stick-brand">Drummer Stick Brand</label>
+            <input type="text" class="form-control" id="stick-brand" />
+          </div>
+        </div>
+        <div>
+          <button id="add" class="btn btn-warning">Add Drummer</button>
+        </div>
+      </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>Drummer First Name</th>
+        <th>Drummer Last Name</th>
+        <th>Performing Group</th>
+        <th>Drum Brand</th>
+        <th>Cymbal Brand</th>
+        <th>Stick Brand</th>
+      </tr>
+    </table>
+
+    <script src="Drummers.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
